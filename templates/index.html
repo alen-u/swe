@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% load static %}
+<html lang="en">
+<body>
+
+{% block css %}
+
+{% endblock css %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+      <a class="navbar-brand me-lg-5 me-0" href="">
+          <img src="{% static 'new/images/logo.png' %}" class="logo-image img-fluid" alt="templatemo pod talk">
+      </a>
+<!--
+      <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
+          <div class="input-group input-group-lg">    
+              <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast" aria-label="Search">
+
+              <button type="submit" class="form-control" id="submit">
+                  <i class="bi-search"></i>
+              </button>
+          </div>
+      </form>
+  -->   
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+  </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                  <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                      <li><a class="dropdown-item" href="listing-page.html">Listing Page</a></li>
+
+                      <li><a class="dropdown-item" href="detail-page.html">Detail Page</a></li>
+                  </ul>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              {% block nav_item %} {% endblock %}
+          </ul>
+
+          <div class="ms-4">
+              <a href="#section_3" class="btn custom-btn custom-border-btn smoothscroll">Log out</a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+
+<section class="hero-section">
+  <div class="container">
+      <div class="row">
+
+          <div class="col-lg-12 col-12">
+              <div class="text-center mb-5 pb-2">
+                  <h1 class="text-white">Criminal Investigation</h1>
+
+
+              <div class="owl-carousel owl-theme">
+                <a href="/police/">
+                  <div class="owl-carousel-info-wrap item">
+                    <img src="{% static 'new/images/profile/police-portial.jpg' %}" class="owl-carousel-image img-fluid" alt="">
+
+                      <div class="owl-carousel-info">
+                          <h4 class="mb-2">
+                            Police Portial
+                          </h4>
+                      </div>
+                  </div>
+                </a>
+                <a href="/citizen/create_case">
+                  <div class="owl-carousel-info-wrap item">
+                    <img src="{% static 'new/images/profile/report_a_crime.jpg' %}" class="owl-carousel-image img-fluid" alt="">
+
+                      <div class="owl-carousel-info">
+                          <h4 class="mb-2">
+                            Report Civilian Crime
+                          </h4>
+                      </div>
+                  </div>
+                </a>
+                <a href="/anonymous/">
+                  <div class="owl-carousel-info-wrap item">
+                    <img src="{% static 'new/images/profile/anonymous.jpg' %}" class="owl-carousel-image img-fluid" alt="">
+
+                      <div class="owl-carousel-info">
+                          <h4 class="mb-2">
+                            Give an Anonymous Tip
+                          </h4>
+                      </div>
+                  </div>
+                </a>
+                <a href="/criminal_directory">
+                  <div class="owl-carousel-info-wrap item">
+                    <img src="{% static 'new/images/profile/criminal.jpg' %}" class="owl-carousel-image img-fluid" alt="">
+
+                      <div class="owl-carousel-info">
+                          <h4 class="mb-2">
+                            Criminal Directory
+                          </h4>
+                      </div>
+                  </div>
+                </a>
+                <a href="/citizen">
+                  <div class="owl-carousel-info-wrap item">
+                    <img src="{% static 'new/images/profile/citizen_portial.jpg' %}" class="owl-carousel-image img-fluid" alt="">
+
+                      <div class="owl-carousel-info">
+                          <h4 class="mb-2">
+                            Citizen Portal
+                          </h4>
+                      </div>
+                  </div>
+                </a>
+                <a href="/police/">
+                  <div class="owl-carousel-info-wrap item">
+                    <img src="
+                    " class="owl-carousel-image img-fluid" alt="">
+
+                      <div class="owl-carousel-info">
+                          <h4 class="mb-2">
+                            Police Portal
+                          </h4>
+                      </div>
+                  </div>
+                </a>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+{% endblock content %}
+
+{% block extra_js %}
+
+{% endblock %}
+
+</body>
+
+</html>
